@@ -1,29 +1,215 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>VIRTUE OF THE VICIOUS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" type="image/png" href="Images/logo.png">
+
+  <title>V O T V</title>
+</head>
 <body>
-  <embed height="0" type="audio/wav" width="0" src="Music/onset.wav" volume="1" loop="false" autostart="true" />
-  <div class="grid">
-    <div class="logo">
-      <a href="https://vuksdev.github.io/VOTV-website/"><img src="Images/logoC.png"></a>
+  <section class="section-header">
+
+    <div class="section-header__nav-bar">
+
+      <div class="section-header__nav-bar--logo">
+        <a href="https://vuksdev.github.io/VOTV-website/"></a><img src="Images/logo.png" alt="">
+      </div>
+
+      <div class="section-header__nav-bar--links">
+        <ul>
+          <li onclick="scrollToElement('.section-releases')">releases</li>
+          <li onclick="scrollToElement('.section-band')">band</li>
+          <li onclick="scrollToElement('.section-shows')">shows</li>
+          <li onclick="scrollToElement('.section-contact')">contact</li>
+        </ul>
+      </div>
+
+      <div class="section-header--background"></div>
+
     </div>
-    <div class="nav">
-      <div class="nav-el"><a target="_blank" href="https://www.facebook.com/virtueofthevicious/">NEWS</a></div>
-      <div class="nav-el"><a target="_blank" href="https://virtueofthevicious.bandcamp.com/">MUSIC</a></div>
-      <div class="nav-el"><a target="_blank" href="https://www.facebook.com/virtueofthevicious/">MERCH</a></div>
-      <div class="nav-el"><a href="#">BAND</a></div>
-      <div class="nav-el"><a href="#">CONTACT</a></div>
+
+    <div class="section-header__album">
+      <a href="https://virtueofthevicious.bandcamp.com/album/oneirophobia" target="_blank">
+        <img src="Images/oneir.png" alt="">
+        <div class="section-header__album--text">
+          out now
+        </div>
+      </a>
     </div>
-    <!-- <div class="main-content">
-      lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum
-    </div> -->
+  </section>
+
+  <!-- Releases section -->
+  <section class="section-releases">
+    <h1 class="heading-primary">
+      releases
+    </h1>
+
+    <!-- Claimant -->
+    <div class="section-releases__element">
+      <a href="https://virtueofthevicious.bandcamp.com/album/claimant" target="_blank">
+        <img src="https://f4.bcbits.com/img/a2978977202_10.jpg" alt="Album cover claimant">
+        <h2 class="heading-secondary">
+          claimant 2015
+        </h2>
+      </a>
+    </div>
+
+    <!-- Alexithymia Vol. I -->
+    <div class="section-releases__element">
+      <a href="https://virtueofthevicious.bandcamp.com/album/alexithymia-vol-i-2" target="_blank">
+        <img src="https://f4.bcbits.com/img/a2951081122_10.jpg" alt="Album cover claimant">
+        <h2 class="heading-secondary">
+          alexithymia vol. i 2016
+        </h2>
+      </a>
+    </div>
+
+    <!-- Oneirophobia -->
+    <div class="section-releases__element">
+      <a href="https://virtueofthevicious.bandcamp.com/album/oneirophobia" target="_blank">
+        <img src="https://f4.bcbits.com/img/a0645911875_10.jpg" alt="Album cover claimant">
+        <h2 class="heading-secondary">
+          oneirophobia 2018
+        </h2>
+      </a>
+    </div>
+  </section>
+
+  <!-- Band section -->
+  <section class="section-band">
+    <h1 class="heading-primary">
+      band
+    </h1>
+
+    <!-- Prophet -->
+    <div class="section-band__element">
+      <img src="Images/prophet.png" alt="">
+      <h2 class="heading-secondary">
+        guitar
+      </h2>
+    </div>
+
+    <!-- Dank -->
+    <div class="section-band__element">
+      <img src="Images/dank.png" alt="">
+      <h2 class="heading-secondary">
+        bass
+      </h2>
+    </div>
+
+    <!-- sum -->
+    <div class="section-band__element">
+      <img src="Images/sum.png" alt="">
+      <h2 class="heading-secondary">
+        vocal
+      </h2>
+    </div>
+
+    <!-- los -->
+    <div class="section-band__element">
+      <img src="Images/los.png" alt="">
+      <h2 class="heading-secondary">
+        drums
+      </h2>
+    </div>
+
+  </section>
+
+  <!-- Shows section -->
+  <section class="section-shows">
+    <h1 class="heading-primary">
+      shows
+    </h1>
+
+    <div class="section-shows__element">
+      <div class="section-shows__element--date">
+        03.07.2018.
+      </div>
+      <div class="section-shows__element--place">
+        Shid, Serbia
+      </div>
+    </div>
+
+    <div class="section-shows__element">
+      <div class="section-shows__element--date">
+        02.07.2018.
+      </div>
+      <div class="section-shows__element--place">
+        Shabac, Serbia
+      </div>
+    </div>
+
+    <div class="section-shows__element">
+      <div class="section-shows__element--date">
+        03.06.2018.
+      </div>
+      <div class="section-shows__element--place">
+        Kragujevac, Serbia
+      </div>
+    </div>
+
+    <div class="section-shows__element">
+      <div class="section-shows__element--date">
+        03.05.2018.
+      </div>
+      <div class="section-shows__element--place">
+        Belgrade, Serbia
+      </div>
+    </div>
+
+    <div class="section-shows__element">
+      <div class="section-shows__element--date">
+        03.04.2018.
+      </div>
+      <div class="section-shows__element--place">
+        Belgrade, Serbia
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section-contact">
+    <h1 class="heading-primary">
+      contact
+    </h1>
+
+    <a href="https://www.facebook.com/virtueofthevicious/" target="_blank">
+      <div class="section-contact__element">
+        facebook
+      </div>
+    </a>
+
+    <a href="https://virtueofthevicious.bandcamp.com/" target="_blank">
+      <div class="section-contact__element">
+        bandcamp
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/channel/UCmC7gOj_X1F-YKe6PYazRMQ" target="_blank">
+      <div class="section-contact__element">
+        youtube
+      </div>
+    </a>
+
+    <div class="section-contact__copy">
+      &copy; 2018 VOTV
+    </div>
+
+  </section>
+
+  <div class="btn-top" onclick="scrollToTop()">
+    <img src="Images/arrow.png" alt="" class="">
   </div>
 </body>
+
+<script src="js/main.js"></script>
 
 </html>

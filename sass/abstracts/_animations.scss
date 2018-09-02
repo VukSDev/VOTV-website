@@ -1,0 +1,13 @@
+@keyframes flickerAnimation {
+  0%   { opacity: 1; }
+  2%   { opacity: .4; }
+  7%   { opacity: .3; }
+  10%   { opacity: .2; }
+  13%   { opacity: .4; }
+  17%   { opacity: .8; }
+  25%   { opacity: .3; }
+  34%   { opacity: .7; }
+  76%   { opacity: .1; }
+  88%  { opacity: .3; }
+  100% { opacity: 1; }
+}

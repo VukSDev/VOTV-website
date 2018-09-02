@@ -1,0 +1,236 @@
+.section-header {
+  background-image: url("../Images/bandBW.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  &--background {
+    pointer-events: none;
+    height: 128px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -5;
+  }
+
+  &__nav-bar {
+    width: 100%;
+    transition: all .3s;
+
+    &--logo {
+      float: left;
+      width: 50%;
+      text-align: center;
+
+      & img {
+        margin-left: -50rem;
+        width: 100px;
+        padding-top: 15px;
+        transition: all .3s;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &--links {
+      float: left;
+      width: 50%;
+
+      & ul {
+        margin: 0;
+      }
+
+      & li {
+        list-style-type: none;
+        font-size: 1.6rem;
+        width: 10%;
+        padding: 2.5%;
+        margin: 2.5%;
+        float: left;
+        transition: all .3s;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        outline: 1px solid rgba($beige, 0);
+        transition: all .3s;
+
+        &:hover {
+          outline: 1px solid $beige;
+          color: $beige;
+        }
+      }
+    }
+  }
+
+  &__album {
+    position: absolute;
+    left: 50%;
+    top: 40vh;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+
+    &--text {
+      color: white;
+      text-transform: uppercase;
+      padding: 2rem;
+      width: 20rem;
+      margin-left: -12rem;
+      text-align: center;
+      outline: 1px solid rgba($beige, 0);
+      opacity: .5;
+      transition: all .3s;
+
+      &:hover {
+        color: $beige;
+        outline: 1px solid $beige;
+      }
+    }
+
+    & img {
+      margin-left: -400px;
+      text-align: center;
+      opacity: .8;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(.99);
+        opacity: .4;
+      }
+    }
+  }
+}
+
+.section-releases {
+  width: 90%;
+  padding: 0 5%;
+  height: auto;
+  background-image: url("../Images/background.jpg");
+  text-align: center;
+  overflow: hidden;
+
+  &__element {
+    width: 20%;
+    padding: 0 6.666%;
+    float: left;
+
+    & img {
+      width: 100%;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(.99);
+      }
+    }
+  }
+}
+
+.section-band {
+  width: 70%;
+  padding: 0 15%;
+  height: auto;
+  background-image: url("../Images/background.jpg");
+  text-align: center;
+  overflow: hidden;
+
+  &__element {
+    width: 19%;
+    padding: 0 3%;
+    float: left;
+    backface-visibility: hidden;
+
+    & img {
+      width: 100%;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(.99);
+      }
+    }
+  }
+}
+
+.section-shows {
+  width: 70%;
+  padding: 0 15%;
+  height: auto;
+  background-image: url("../Images/background.jpg");
+  text-align: center;
+  overflow: hidden;
+
+  &__element {
+    width: 80%;
+    padding: 0 10%;
+    float: left;
+    backface-visibility: hidden;
+    border-bottom: 1px solid rgba($beige, .5);
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 5rem;
+    }
+
+    &--date {
+      color: white;
+      font-size: 2rem;
+      padding: 5rem 2% 0 0;
+      opacity: .5;
+      float: left;
+      width: 48%;
+      text-align: right;
+    }
+
+    &--place {
+      color: white;
+      font-size: 2rem;
+      padding: 5rem 0;
+      opacity: .5;
+      float: left;
+      width: 50%;
+      text-align: left;
+    }
+  }
+}
+
+.section-contact {
+  width: 70%;
+  padding: 0 15%;
+  height: auto;
+  color: rgba($beige, .5);
+  background-color: #020202;
+  text-align: center;
+  overflow: hidden;
+
+  & a {
+    color: rgba($beige, .5);
+    transition: color .3s;
+
+    &:hover {
+      color: rgba($beige, 1);
+    }
+  }
+
+  &__element {
+    width: 20%;
+    padding: 3rem 6.666666%;
+    font-size: 1.6rem;
+    float: left;
+    border-bottom: 1px solid rgba($beige, .5);
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  &__copy {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 5rem 0;
+    color: rgba(white, 0.5);
+    font-size: 1.4rem;
+  }
+}

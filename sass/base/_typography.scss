@@ -1,0 +1,32 @@
+.heading-primary {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: $beige;
+  width: 100%;
+  opacity: .5;
+  padding: 10rem 0;
+  font-weight: 300;
+  transition: all .3s;
+
+  &:hover {
+    cursor: default;
+    opacity: .8;
+  }
+}
+
+.heading-secondary {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $beige;
+  width: 100%;
+  opacity: .5;
+  padding: 5rem 0 10rem 0;
+  font-weight: 300;
+  transition: all .3s;
+
+  &:hover {
+    cursor: default;
+  }
+}
