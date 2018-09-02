@@ -1,6 +1,6 @@
 var buttonToTop = document.querySelector(".btn-top");
 var navBar = document.querySelector(".section-header__nav-bar");
-var buttonFadeTreshold = 75;
+var buttonFadeTreshold = 20;
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
@@ -11,12 +11,12 @@ function scrollFunction() {
   if (document.body.scrollTop > buttonFadeTreshold || document.documentElement.scrollTop > buttonFadeTreshold) {
     buttonToTop.style.visibility = "visible";
     buttonToTop.style.opacity = "0.5";
-    navBar.style.top = "-200";
-    navBar.style.zindex = "20";
-    setTimeout(function(){
-      navBar.style.position = "fixed";
-      navBar.style.top = "0";
-    }, 300);
+    // navBar.style.top = "-200";
+    // navBar.style.zindex = "20";
+    // setTimeout(function(){
+    //   navBar.style.position = "fixed";
+    //   navBar.style.top = "0";
+    // }, 300);
   }
   else
   {
