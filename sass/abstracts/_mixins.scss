@@ -1,0 +1,9 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone { @content };
+
+  @if $breakpoint == tab-port { @content };
+
+  @if $breakpoint == tab-land { @content };
+
+  @if $breakpoint == big-screen { @content };
+}
